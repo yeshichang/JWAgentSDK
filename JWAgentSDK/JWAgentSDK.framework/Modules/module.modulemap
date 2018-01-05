@@ -1,0 +1,6 @@
+framework module JWAgentSDK {
+  umbrella header "JWAgentSDK.h"
+
+  export *
+  module * { export * }
+}
