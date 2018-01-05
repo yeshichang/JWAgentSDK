@@ -1,7 +1,7 @@
 # JWAgentSDK
 JWAgentSDK CocoaPod repo
 
-- JWAgentSDK CocoaPod repo 从1.1开始, 小伙伴们可以使用 Cocoapods 来集成洛米1.1SDK啦, 集成方法如下:
+- JWAgentSDK CocoaPod repo 从1.1开始, 小伙伴们可以使用 Cocoapods 来集成聚沃1.1SDK啦, 集成方法如下:
 
 1.Podfile 文件添加如下代码
 
@@ -11,6 +11,6 @@ JWAgentSDK CocoaPod repo
 
 `#import <JWAgentSDK/JWAgentSDK.h>`
 
-3.接下来, 就可以正常使用洛米广告的所有功能啦.
+3.接下来, 就可以正常使用聚沃广告的所有功能啦.
 
 具体的使用步骤可以参考我们的官方文档
