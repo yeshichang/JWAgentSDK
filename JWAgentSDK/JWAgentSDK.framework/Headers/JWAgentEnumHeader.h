@@ -29,6 +29,7 @@ typedef enum : NSUInteger {
     IAdDataTypeMessageFlowThreeImages,    // 信息流三小图
     IAdDataTypeMessageFlowSmallImage,     // 信息流广告小图
     IAdDataTypeMessageFlowBigImage,       // 信息流广告大图
+    IAdDataTypeRedEnvelope,               // 红包
 } IAdDataType;
 
 

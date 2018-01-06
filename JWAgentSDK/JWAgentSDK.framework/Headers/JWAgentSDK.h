@@ -25,4 +25,5 @@ FOUNDATION_EXPORT const unsigned char JWAgentSDKVersionString[];
 #import <JWAgentSDK/JWAgentBannerView.h>
 #import <JWAgentSDK/JWAgentMessageThreeImagesView.h>
 #import <JWAgentSDK/JWAgentMessageFlowView.h>
+#import <JWAgentSDK/JWAgentRedEnvelopeView.h>
 
