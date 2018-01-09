@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JWAgentSDK"
-  s.version      = "1.1"
+  s.version      = "1.1.2"
   s.summary      = "聚沃广告SDK"
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "JWAgentSDK/*.{bundle}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
