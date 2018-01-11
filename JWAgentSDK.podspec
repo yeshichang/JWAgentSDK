@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JWAgentSDK"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "聚沃广告SDK"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    DRAgentSDK是聚沃科技开发的广告SDK，集成简单，收益高
+                    JWAgentSDK是聚沃科技开发的广告SDK，集成简单，收益高
                    DESC
 
   s.homepage     = "https://github.com/yeshichang/JWAgentSDK"
