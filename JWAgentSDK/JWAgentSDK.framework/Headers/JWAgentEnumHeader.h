@@ -10,9 +10,11 @@
 #define JWAgentEnumHeader_h
 
 typedef enum : NSUInteger {
-    OnSuccess =0,  // 广告加载成功
-    OnError,       // 广告失败
-    OnClick,       // 点击广告
+    OnSuccess = 0,          // 广告加载成功
+    OnError,                // 广告失败
+    OnClick,                // 点击广告
+    OnSplashDataSuccess,    // 开屏广告数据加载成功
+    OnSplashDataError       // 开屏广告数据加载失败
 } IAdSuccessBack;
 
 
