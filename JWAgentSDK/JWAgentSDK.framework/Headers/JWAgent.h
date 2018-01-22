@@ -72,25 +72,6 @@
 @property(nonatomic, strong)UINavigationController * pushWebViewNavigationController;
 
 
-
-/**
- 通过banner宽度获取其的高度
- 
- @param adDataType 类型
- @param width banner宽度
- @return banner高度
- */
-- (CGFloat)getBannerViewHeightWithType:(IAdDataType)adDataType width:(CGFloat)width;
-
-/**
- @brief  横幅(Banner)广告
- @param  adDataType  类型
- @param  rect   尺寸大小
- return  JWAgentBannerView
- */
-- (JWAgentBannerView*)showBannerViewWithType:(IAdDataType)adDataType frame:(CGRect)rect;
-
-
 /**
  @brief  跳入网页视图
  @param  advertDataModel  广告数据model
