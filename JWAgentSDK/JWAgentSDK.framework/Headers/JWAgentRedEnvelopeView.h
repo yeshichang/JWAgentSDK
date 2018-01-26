@@ -8,26 +8,33 @@
 
 #import <UIKit/UIKit.h>
 #import "JWAgentEnumHeader.h"
+#import "JWAgentRedEnvelopeAdDelegate.h"
 
 @interface JWAgentRedEnvelopeView : UIView
 
-/* 关闭按钮 默认:展示YES */
-@property (nonatomic,assign)BOOL isShowCloseButton;
+/**
+ RedEnvelope 代理
+ */
+@property (nonatomic, weak) id <JWAgentRedEnvelopeAdDelegate> delegate;
 
-/* 动画 默认:开启YES */
-@property (nonatomic,assign)BOOL isAnimation;
+/**
+ 关闭按钮 默认:展示YES
+ */
+@property (nonatomic, assign) BOOL isShowCloseButton;
 
-/* 关闭按钮字体颜色 默认:[UIColor grayColor]  */
-@property (nonatomic,strong)UIColor  * closeButtonTitleColor;
+/**
+ 动画 默认:开启YES
+ */
+@property (nonatomic, assign) BOOL isAnimation;
 
-/* 关闭按钮字体大小 默认:[UIFont systemFontOfSize:10] */
-@property (nonatomic,strong)UIFont  * closeButtonTitleFont;
+/**
+ 关闭按钮字体颜色 默认:[UIColor grayColor]
+ */
+@property (nonatomic, strong)UIColor  * closeButtonTitleColor;
 
-
-/* 回调结果 */
-@property (nonatomic,copy) void(^redEnvelopeAdvertResultCallback)(IAdSuccessBack successBack,NSString * result);
-
-/* 关闭回调 */
-@property (nonatomic ,copy) void(^redEnvelopeAdvertCloseClickCallback)(void);
+/**
+ 关闭按钮字体大小 默认:[UIFont systemFontOfSize:10]
+ */
+@property (nonatomic, strong)UIFont  * closeButtonTitleFont;
 
 @end

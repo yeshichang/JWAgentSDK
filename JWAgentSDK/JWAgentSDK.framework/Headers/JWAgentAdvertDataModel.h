@@ -8,21 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+@class JWAgentAdvertDataImageModel;
 @interface JWAgentAdvertDataModel : NSObject
 
-/* 广告名字 */
+/** 广告名字 */
 @property (nonatomic,strong)NSString * title;
 
-/* 广告id */
+/** 广告id */
 @property (nonatomic,strong)NSString * planid;
 
-/* 广告图片数组 */
-@property (nonatomic,strong)NSArray  * imagesDataArray;
+/** 广告图片数组 */
+@property (nonatomic,strong)NSArray<JWAgentAdvertDataImageModel *>  * imagesDataArray;
 
-/* 跳入链接 */
+/** 跳入链接 */
 @property (nonatomic,strong)NSString * gotourl;
 
-/* 点弹概率 */
+/** 点弹 */
 @property (nonatomic, copy) NSString *pnum;
+
+/** 暗弹 */
+@property (nonatomic ,copy) NSString *dktips;
 
 @end

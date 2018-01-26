@@ -17,13 +17,26 @@ FOUNDATION_EXPORT const unsigned char JWAgentSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <JWAgentSDK/PublicHeader.h>
 
 
-
 #import <JWAgentSDK/JWAgent.h>
 #import <JWAgentSDK/JWAgentEnumHeader.h>
 #import <JWAgentSDK/JWAgentAdvertDataModel.h>
 #import <JWAgentSDK/JWAgentAdvertDataImageModel.h>
+
+#import <JWAgentSDK/JWAgentLoader.h>
+#import <JWAgentSDK/JWAgentLoaderAdDelegate.h>
+
+#import <JWAgentSDK/JWAgentSplash.h>
+#import <JWAgentSDK/JWAgentSplashAdDelegate.h>
+
 #import <JWAgentSDK/JWAgentBannerView.h>
+#import <JWAgentSDK/JWAgentBannerAdDelegate.h>
+
 #import <JWAgentSDK/JWAgentMessageThreeImagesView.h>
+#import <JWAgentSDK/JWAgentMessageThreeImagesAdDelegate.h>
+
 #import <JWAgentSDK/JWAgentMessageFlowView.h>
+#import <JWAgentSDK/JWAgentMessageFlowAdDelegate.h>
+
 #import <JWAgentSDK/JWAgentRedEnvelopeView.h>
+#import <JWAgentSDK/JWAgentRedEnvelopeAdDelegate.h>
 

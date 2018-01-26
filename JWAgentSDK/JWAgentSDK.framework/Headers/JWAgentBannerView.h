@@ -8,26 +8,33 @@
 
 #import <UIKit/UIKit.h>
 #import "JWAgentEnumHeader.h"
+#import "JWAgentBannerAdDelegate.h"
 
 @interface JWAgentBannerView : UIView
+
+#pragma mark *** API ***
 
 /* 关闭按钮是否展示 默认为YES展示*/
 @property (nonatomic,assign) BOOL  isShowCloseButton;
 
+/**
+ Banner 代理
+ */
+@property (nonatomic ,weak) id <JWAgentBannerAdDelegate> delegate;
 
 /**
  初始化BannerView
  
  @param frame               banner尺寸frame
  @param adDataType          banner广告类型 (横幅广告  小横幅广告)
- @param resultCallback      初始化成功或失败的回调
- @param closeClickCallback  点击关闭按钮的回调
  @return                    该类BannerView
  */
-- (instancetype)initWithFrame:(CGRect)frame AdDataType:(IAdDataType)adDataType
-               resultCallback:(void(^)(IAdSuccessBack successBack,NSString * result))resultCallback
-           closeClickCallback:(void(^)(void))closeClickCallback;
+- (instancetype)initWithFrame:(CGRect)frame AdDataType:(IAdDataType)adDataType;
 
+/**
+ 加载Banner数据
+ */
+- (void)loadBannerRequest;
 
 /**
  通过banner宽度获取其的高度
@@ -40,11 +47,12 @@
                                  width:(CGFloat)width;
 
 
+#pragma mark *** 定时器轮播使用 ***
 
 /*
- *    使用Banner广告的轮播效果要注意几点：
- *    在视图显示成功的时候开启定时器
- *    页面消失(在内存中销毁，push modal dealloc等)一定要关闭定时器，目的:
+ * 使用Banner广告的轮播效果要注意几点：
+ * 在视图显示成功的时候开启定时器
+ * 页面消失(在内存中销毁，push modal dealloc等)一定要关闭定时器，目的:
  * 1、关闭定时器,以防8秒每次请求数据
  * 2、再次进入重新加载bannerView 打开定时器
  * 3、避免内存泄漏
@@ -59,6 +67,5 @@
  关闭定时器
  */
 - (void)cancelTimer;
-
 
 @end
