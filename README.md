@@ -1,5 +1,5 @@
 # JWAgentSDK
-JWAgentSDK CocoaPod repo
+- JWAgentSDK CocoaPod repo
 
 - JWAgentSDK CocoaPod repo 从1.1开始, 小伙伴们可以使用 Cocoapods 来集成聚沃1.1SDK啦, 集成方法如下:
 
